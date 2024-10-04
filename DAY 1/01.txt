@@ -1,0 +1,40 @@
+// Course Topics..................
+
+>>Basics...
+  
+  How Website Works?
+  What is JavaScript?
+  History Of JavaScript
+  Values & Variable
+  Data types in JavaScript
+  Concat and Type coercion
+  Operators & Expression
+  If Statement & Loops
+  Functions in JavaScript
+  Arrays in JavaScript
+  String in JavaScript
+  Math Object
+  Date & Time in JavaScript
+
+
+>>Advanced...
+  
+  EcmaScript 2015-2024
+  Window Object
+  BOM & DOM
+  Event Object in JavaScript
+  OOPs in JavaScript
+  Event Propagation
+  Advanced Functions
+  JSON & FETCH API & other APIs
+  Promises, Async-Await
+  Error Handling in JavaScript
+
+
+>>Pro Level...
+  
+  How JavaScript Works?
+  100+ Interview Questions
+  Project ECOM Website with HTML CSS & JS ❤️!
+
+

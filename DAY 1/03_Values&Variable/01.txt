@@ -1,0 +1,21 @@
+Variable Name
+    -A variable is a container(box) that holds a value.
+            |
+    var  myName  =  "Tahir"
+     |
+    Variable(key)
+
+>>Naming Variables: Rules and Best Practice
+
+* Variable names must start with a letter, an underscore(_) or a dollar sign ($)
+
+* Variable names cannot contain spaces.
+
+* By convention, Javascript variable names are written in camelCase.
+
+* Variable cannot be same as reserved keywords such as if or const.
+
+* Variable name are case sensitive.
+
+
+

@@ -1,0 +1,58 @@
+//Client vs Server
+
+>Client-side: Refers to operations that are performed on the user's device (browser). It involves rendering the user interface and handling user interactions.
+
+>Server-side: Refers to operations performed on the server, where the application logic runs, databases are accessed, and data is processed before sending responses back to the client.
+
+
+//Building Block of Website
+
+HTML
+----Provide a strucure and content of a webpage
+
+CSS
+----Styles and designs of the webpage
+
+JS
+----Adds interactivity and dynamic behavior to the webpage
+
+//What is JS??
+
+---JavaScript improves the user experience of the webpage by converting it from a static page into an interactive one.
+
+                        "or"
+
+---JavaScript is used to update and change both HTML and CSS. It added behavior to the pages. 
+
+
+//Why JavaScript?
+
+---Most used programming language among developers worldwide as of 2023.
+
+
+//History of JavaScript
+
+In 1995 - Created by Brendan Each at NetScape in just 10 days.
+
+Mocha --> LiveScript --> JavaScript
+
+Switching from LiveScript to javaScript was a smart move to make it sound cooler and piggyback on Java's fame, while also cozing up to Sun Microsystems.
+
+
+1996 --> JS was created  
+
+1997 --> It was then submitted to ECMA international for standardization, which resulted in ECMAScript    
+
+2015 --> ES6 / ECMAScript 2015 - Decided to switch to annual releases of ECMAScript.
+
+
+//Types of JS..
+
+Inline JS
+----<button onclick="alert('Hello')">Click me</button>
+
+Internal JS
+----<script>console.log('Hello,  World!');</script>
+
+External JS
+----<Script src="script.js"></script>

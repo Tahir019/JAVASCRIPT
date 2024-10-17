@@ -17,5 +17,96 @@ Variable Name
 
 * Variable name are case sensitive.
 
+***********************************************************************************************
+JavaScript Variables
+
+1. What are Variables in JavaScript?
+
+Definition: A variable is a container used to store data that can be referenced and manipulated in a program.
+Purpose: Variables are used to hold values like numbers, strings, or objects, which can be used later in the program.
+
+2. Declaring Variables: JavaScript provides three main keywords for declaring variables:
+
+var: The old way to declare variables (global or function-scoped, can be re-declared and updated).
+let: Block-scoped, can be updated but not re-declared in the same scope.
+const: Block-scoped, cannot be updated or re-declared. Useful for values that should not change.
+Example:
+
+var a = 10; // can be re-declared and updated
+let b = 20; // block-scoped, can be updated but not re-declared
+const c = 30; // block-scoped, cannot be updated or re-declared
+
+
+3. Variable Scope:
+
+Global scope: Variables declared outside any function are globally scoped and accessible throughout the program.
+Function scope: Variables declared within a function using var are scoped to the function.
+Block scope: Variables declared with let or const inside blocks {} are only accessible within that block.
+
+4. Hoisting:
+
+JavaScript variables declared with var are hoisted to the top of their scope, meaning you can use them before they're declared (but will be undefined).
+Variables declared with let and const are hoisted but not initialized, meaning accessing them before declaration throws an error.
+Example:
+
+console.log(x); // undefined (hoisted)
+var x = 5;
+
+console.log(y); // Error: Cannot access 'y' before initialization
+let y = 10;
+
+
+JavaScript Values
+
+1. Types of Values: JavaScript has various data types to hold different values. These are divided into:
+
+Primitive types:
+
+Number: Represents both integers and floating-point numbers (10, 3.14).
+String: Represents text ("hello", 'world').
+Boolean: Represents true or false.
+Undefined: A variable that has been declared but not assigned a value.
+Null: Represents an intentional absence of any value (object type but treated as primitive).
+Symbol: A unique and immutable value, used as object keys.
+BigInt: For numbers larger than Number.MAX_SAFE_INTEGER.
+
+Non-primitive types:
+
+Object: Used to store collections of data ({ key: "value" }).
+Array: A special type of object for ordered lists of values ([1, 2, 3]).
+Function: A block of reusable code.
+
+2. Dynamic Typing: JavaScript is dynamically typed, meaning a variable can hold any type of value, and its type can change at runtime.
+
+let value = 5; // number
+value = "hello"; // string
+value = true; // boolean
+
+
+Best Practices for Variables in Development:
+
+Use const wherever possible: This ensures values don’t accidentally change.
+Use let for variables that need to change: Keeps your code block-scoped and prevents issues with re-declarations.
+Avoid using var: It can lead to unexpected bugs due to function scoping and hoisting.
+
+
+Common Interview Questions:
+
+What is the difference between var, let, and const?
+
+var is function-scoped, hoisted, and can be re-declared.
+let is block-scoped and can be updated but not re-declared.
+const is block-scoped and cannot be updated or re-declared.
+
+Explain hoisting in JavaScript.
+
+Hoisting refers to the JavaScript interpreter moving variable and function declarations to the top of their scope before code execution.
+
+What is the difference between undefined and null?
+
+undefined means a variable has been declared but not assigned a value.
+null is an assignment value indicating the intentional absence of a value.
+
+
 
 

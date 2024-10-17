@@ -1,6 +1,3 @@
-Got it! Here’s the complete set of JavaScript notes formatted in `README.md` style, using headings and subheadings properly to make it visually appealing on GitHub. You can copy this directly into your `README.md` file:
-
-```markdown
 # JavaScript Interview Notes
 
 ## 1. Introduction to JavaScript
@@ -262,4 +259,3 @@ console.log(counter()); // 2
 ```
 ```
 
-This `README.md` format includes all your notes organized with appropriate headings, making it easy to read and visually appealing on GitHub. Just copy and paste the entire block above, and it will be ready for use! Let me know if you need any more changes!

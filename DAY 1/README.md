@@ -92,6 +92,8 @@ myVar = true;        // Now it's a Boolean
 
 ## Hoisting
 JavaScript variables and function declarations are "hoisted," meaning they are moved to the top of their scope before the code executes. However, only the declarations are hoisted, not the initializations.
+                **"or"**
+In JavaScript, when you declare a variable or function, JavaScript automatically moves (hoists) the declaration to the top of its scope before executing the code. However, if you assign a value to a variable, that part doesn’t get hoisted.
 
 ### Example of Hoisting with `var`
 ```javascript
@@ -101,6 +103,26 @@ var myVar = "Hello";
 Even though the `var myVar` declaration is below the `console.log`, it gets hoisted to the top, but the initialization (`"Hello"`) stays where it is.
 
 **Important**: `let` and `const` variables are hoisted as well, but they are not initialized, leading to a `ReferenceError` if accessed before declaration.
+
+**>>>Explanation---**
+When you use let and const, the variables are still hoisted like var, but they are not initialized with a default value like undefined. Instead, they remain in a "temporal dead zone" (TDZ) from the start of the block until the declaration is encountered. This means if you try to access the variable before it’s declared, you’ll get a ReferenceError.
+
+Example:
+
+console.log(a); // Output: undefined (because of `var` hoisting)
+var a = 5;
+
+console.log(b); // Error: Cannot access 'b' before initialization
+let b = 10;
+
+Explanation:
+
+var is hoisted and initialized to undefined, so you can reference a before it's assigned a value.
+
+let is hoisted but not initialized, so trying to reference b before the declaration results in a ReferenceError.
+
+
+
 
 ---
 
@@ -160,7 +182,7 @@ console.log(typeof name); // Outputs: "string"
 ```
 
 **Interview Question**: What’s the result of `typeof null`?
-- The `typeof null` returns `"object"`, which is a quirk of JavaScript from its early implementation. This behavior is kept for backward compatibility.
+- The `typeof null` returns `"object"`, which is a quirk (Strange behaviour) of JavaScript from its early implementation. This behavior is kept for backward compatibility.
 
 ---
 

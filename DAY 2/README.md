@@ -89,7 +89,7 @@ These types store references to objects in memory.
 - Used to store collections of data in key-value pairs.
 
   **Example**:
-  '''javascript 
+  ```javascript 
   let person = {
   name: "John",
   age: 30

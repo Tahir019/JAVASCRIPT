@@ -113,7 +113,7 @@ These types store references to objects in memory.
   ```javascript
   function greet() {
   console.log("Hello!");
-}
+  }
 
 
 ### **Summary**

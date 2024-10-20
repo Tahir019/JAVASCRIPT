@@ -22,105 +22,105 @@ Primitive data types are basic and immutable (cannot be changed). There are 7 pr
   ```javascript
   let name = "John";
 
-b. Number
+### b. Number
 
-Represents both integer and floating-point numbers.
+- Represents both integer and floating-point numbers.
 
-Can also be Infinity, -Infinity, and NaN (Not a Number).
+- Can also be Infinity, -Infinity, and NaN (Not a Number).
 
-Example:
-
-let age = 25;
-let price = 99.99;
-
-
-c. Boolean
-
-Represents true or false values.
-
-Example:
-
-let isLoggedIn = true;
+  **Example**:
+  ```javascript
+  let age = 25;
+  let price = 99.99;
 
 
-d. Undefined
+### c. Boolean
 
-A variable that has been declared but has not been assigned a value is undefined.
+- Represents true or false values.
 
-Example:
-
-let address;
-console.log(address); // undefined
-
-
-e. Null
-
-Represents an intentional absence of any object value.
-
-Example:
-
-let emptyValue = null;
+  **Example**:
+  ```javascript
+  let isLoggedIn = true;
 
 
-f. Symbol
+### d. Undefined
 
-Introduced in ES6, Symbol is a unique and immutable value, often used as object keys.
+- A variable that has been declared but has not been assigned a value is undefined.
 
-Example:
-
-let uniqueID = Symbol("id");
-
-
-g. BigInt
-
-Used to represent integers larger than the Number type can handle.
-
-Example:
-
-let bigNumber = 123456789012345678901234567890n;
+  **Example**:
+  ```javascript
+  let address;
+  console.log(address); // undefined
 
 
-2. Non-Primitive Types (Reference Types)
+### e. Null
+
+- Represents an intentional absence of any object value.
+
+  **Example**:
+  ```javascript
+  let emptyValue = null;
+
+
+### f. Symbol
+
+- Introduced in ES6, Symbol is a unique and immutable value, often used as object keys.
+
+  **Example**:
+  ```javascript
+  let uniqueID = Symbol("id");
+
+
+### g. BigInt
+
+- Used to represent integers larger than the Number type can handle.
+
+  **Example**:
+  ```javascript
+  let bigNumber =     123456789012345678901234567890n;
+
+
+## 2. Non-Primitive Types (Reference Types)
 
 These types store references to objects in memory.
 
-a. Object
+### a. Object
 
-Used to store collections of data in key-value pairs.
+- Used to store collections of data in key-value pairs.
 
-Example:
-
-let person = {
+  **Example**:
+  '''javascript 
+  let person = {
   name: "John",
   age: 30
 };
 
 
-b. Array
+### b. Array
 
-A special type of object used to store ordered lists of values.
+- A special type of object used to store ordered lists of values.
 
-Example:
+  **Example**:
+  ```javascript
+  let numbers = [1, 2, 3, 4, 5];
 
-let numbers = [1, 2, 3, 4, 5];
 
+### c. Function
 
-c. Function
+- Functions are also objects in JavaScript and can be assigned to variables, passed as arguments, or returned by other functions.
 
-Functions are also objects in JavaScript and can be assigned to variables, passed as arguments, or returned by other functions.
-
-Example:
-
-function greet() {
+  **Example**:
+  ```javascript
+  function greet() {
   console.log("Hello!");
 }
 
 
-Summary
+### **Summary**
 
-Primitive Types: String, Number, Boolean, Undefined, Null, Symbol, BigInt
+- Primitive Types: String, Number, Boolean, Undefined, Null, Symbol, BigInt
 
-Non-Primitive Types: Object, Array, Function
+- Non-Primitive Types: Object, Array, Function
 
 
 ---

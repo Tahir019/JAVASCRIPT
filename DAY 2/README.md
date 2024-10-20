@@ -1,7 +1,9 @@
 # JavaScript: Data Types
 
 ## Introduction
-Data types define the type of values that a variable can hold in JavaScript. Understanding data types is fundamental for writing robust, efficient, and error-free code.
+Data types define the type of values that a variable can hold in JavaScript. 
+
+- Understanding data types is fundamental for writing robust, efficient, and error-free code.
 
 ---
 

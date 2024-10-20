@@ -92,7 +92,7 @@ myVar = true;        // Now it's a Boolean
 
 ## Hoisting
 JavaScript variables and function declarations are "hoisted," meaning they are moved to the top of their scope before the code executes. However, only the declarations are hoisted, not the initializations.
-                **"or"**
+                ### **"or"**
 In JavaScript, when you declare a variable or function, JavaScript automatically moves (hoists) the declaration to the top of its scope before executing the code. However, if you assign a value to a variable, that part doesn’t get hoisted.
 
 ### Example of Hoisting with `var`

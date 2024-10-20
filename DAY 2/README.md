@@ -6,59 +6,123 @@ Data types define the type of values that a variable can hold in JavaScript.
 - Understanding data types is fundamental for writing robust, efficient, and error-free code.
 
 ---
+# Data Types 
 
-## Primitive Data Types
-JavaScript has seven primitive data types, which are immutable and represent a single value.
+In JavaScript, there are two main categories of data types:
+1. **Primitive Types**
+2. **Non-Primitive Types (Reference Types)**
 
-### 1. Number
-Represents numeric values, including integers and floating-point numbers.
-```javascript
-var myFavNum = -5;
-console.log(myFavNum); // Outputs: -5
-```
+## 1. Primitive Types
+Primitive data types are basic and immutable (cannot be changed). There are 7 primitive types in JavaScript:
 
-### 2. String
-Represents a sequence of characters enclosed in single or double quotes.
-```javascript
-var myName = 'vinod';
-console.log(myName); // Outputs: vinod
-```
+### a. `String`
+- Used to represent text.
+- Written inside quotes (`' '`, `" "`, or backticks `` ` ` `).
+  
+  **Example**:
+  ```javascript
+  let name = "John";
 
-### 3. Boolean
-Represents a logical entity with two values: `true` or `false`.
-```javascript
-var isRaining = false;
-var areYouAwesome = true;
-console.log(isRaining); // Outputs: false
-```
+b. Number
 
-### 4. Undefined
-Represents the absence of a value or an uninitialized variable.
-```javascript
-var vinod;
-console.log(vinod); // Outputs: undefined
-```
+Represents both integer and floating-point numbers.
 
-### 5. Null
-Represents the explicit absence of any value. Used when a variable should have "no value."
-```javascript
-var badMemories = null;
-console.log(badMemories); // Outputs: null
-```
+Can also be Infinity, -Infinity, and NaN (Not a Number).
 
-### 6. BigInt
-Represents integers of arbitrary precision (introduced in ECMAScript 2020).
-```javascript
-const bigNumber = 1234567890123456789012345678901234567890n;
-console.log(bigNumber); // Outputs: 1234567890123456789012345678901234567890n
-```
+Example:
 
-### 7. Symbol
-Represents a unique and immutable value, often used to create unique object keys.
-```javascript
-const mySymbol = Symbol("description");
-console.log(mySymbol); // Outputs: Symbol(description)
-```
+let age = 25;
+let price = 99.99;
+
+
+c. Boolean
+
+Represents true or false values.
+
+Example:
+
+let isLoggedIn = true;
+
+
+d. Undefined
+
+A variable that has been declared but has not been assigned a value is undefined.
+
+Example:
+
+let address;
+console.log(address); // undefined
+
+
+e. Null
+
+Represents an intentional absence of any object value.
+
+Example:
+
+let emptyValue = null;
+
+
+f. Symbol
+
+Introduced in ES6, Symbol is a unique and immutable value, often used as object keys.
+
+Example:
+
+let uniqueID = Symbol("id");
+
+
+g. BigInt
+
+Used to represent integers larger than the Number type can handle.
+
+Example:
+
+let bigNumber = 123456789012345678901234567890n;
+
+
+2. Non-Primitive Types (Reference Types)
+
+These types store references to objects in memory.
+
+a. Object
+
+Used to store collections of data in key-value pairs.
+
+Example:
+
+let person = {
+  name: "John",
+  age: 30
+};
+
+
+b. Array
+
+A special type of object used to store ordered lists of values.
+
+Example:
+
+let numbers = [1, 2, 3, 4, 5];
+
+
+c. Function
+
+Functions are also objects in JavaScript and can be assigned to variables, passed as arguments, or returned by other functions.
+
+Example:
+
+function greet() {
+  console.log("Hello!");
+}
+
+
+Summary
+
+Primitive Types: String, Number, Boolean, Undefined, Null, Symbol, BigInt
+
+Non-Primitive Types: Object, Array, Function
+
 
 ---
 

@@ -93,7 +93,7 @@ These types store references to objects in memory.
   let person = {
   name: "John",
   age: 30
-};
+  };
 
 
 ### b. Array

@@ -6,7 +6,6 @@ Data types define the type of values that a variable can hold in JavaScript.
 - Understanding data types is fundamental for writing robust, efficient, and error-free code.
 
 ---
-# Data Types 
 
 In JavaScript, there are two main categories of data types:
 1. **Primitive Types**

@@ -253,6 +253,7 @@
 
 # Answer Key
 
+
 # JavaScript Interview Questions and Challenges
 
 ### **Challenge**: What will be the output of `var result = "hello" / 2;`?
@@ -270,77 +271,63 @@
   ```js
   5 == "5";  // true (because "5" is converted to 5)
   5 === "5"; // false (different types: number and string)
-
+  ```
 
 ---
 
-Interview Question: Write a program to determine if a person is eligible to drive based on age and license status.
+### **Interview Question**: Write a program to determine if a person is eligible to drive based on age and license status.
 
-Answer:
-
-function canDrive(age, hasLicense) {
-  if (age >= 18 && hasLicense) {
-    return "Eligible to drive";
-  } else {
-    return "Not eligible to drive";
+- **Answer**:
+  ```js
+  function canDrive(age, hasLicense) {
+    if (age >= 18 && hasLicense) {
+      return "Eligible to drive";
+    } else {
+      return "Not eligible to drive";
+    }
   }
-}
-
-console.log(canDrive(20, true)); // Eligible to drive
-console.log(canDrive(16, false)); // Not eligible to drive
-
-
+  
+  console.log(canDrive(20, true)); // Eligible to drive
+  console.log(canDrive(16, false)); // Not eligible to drive
+  ```
 
 ---
 
-Interview Question: What will console.log("5" + 3); output?
-
-Answer: The output will be "53". This is because the + operator concatenates strings, so the number 3 is converted to a string and added to "5", resulting in "53".
-
-
+### **Interview Question**: What will `console.log("5" + 3);` output?
+- **Answer**: 
+  The output will be `"53"`. This is because the `+` operator concatenates strings, so the number `3` is converted to a string and added to `"5"`, resulting in `"53"`.
 
 ---
 
-Interview Question: Use a ternary operator to check if a student's score is a pass or fail.
+### **Interview Question**: Use a ternary operator to check if a student's score is a pass or fail.
 
-Answer:
+- **Answer**:
+  ```js
+  let score = 75;
+  let result = (score >= 50) ? "Pass" : "Fail";
+  console.log(result); // Pass
+  ```
 
-let score = 75;
-let result = (score >= 50) ? "Pass" : "Fail";
-console.log(result); // Pass
+---
+## **Combined Interview Questions**
 
-
+### **1. What is the output of `console.log(typeof ("5" - 3));`?**
+- **Answer**:
+  The output will be `"number"`. Even though `"5"` is a string, the `-` operator forces a numeric conversion, so `"5" - 3` becomes `5 - 3`, which results in `2`, and the type of `2` is `"number"`.
 
 ---
 
-Combined Interview Questions
-
-1. What is the output of console.log(typeof ("5" - 3));?
-
-Answer: The output will be "number". Even though "5" is a string, the - operator forces a numeric conversion, so "5" - 3 becomes 5 - 3, which results in 2, and the type of 2 is "number".
-
-
+### **2. What happens in `console.log(2 < 12 < 5);`?**
+- **Answer**:
+  The output will be `true`. Here's why:
+  - First, `2 < 12` is `true`.
+  - Then, `true < 5` is evaluated. In JavaScript, `true` is converted to `1`, and `1 < 5` is `true`.
 
 ---
 
-2. What happens in console.log(2 < 12 < 5);?
-
-Answer: The output will be true. Here's why:
-
-First, 2 < 12 is true.
-
-Then, true < 5 is evaluated. In JavaScript, true is converted to 1, and 1 < 5 is true.
-
-
-
-
----
-
-3. What does console.log("20" + 10 + 10); output?
-
-Answer: The output will be "201010". This happens because the first + concatenates the string "20" with 10, resulting in "2010". Then "2010" is concatenated with 10, resulting in "201010".
-
-
+### **3. What does `console.log("20" + 10 + 10);` output?**
+- **Answer**: 
+  The output will be `"201010"`. This happens because the first `+` concatenates the string `"20"` with `10`, resulting in `"2010"`. Then `"2010"` is concatenated with `10`, resulting in `"201010"`.
 
 ---
 

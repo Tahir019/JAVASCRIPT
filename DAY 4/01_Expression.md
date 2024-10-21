@@ -224,32 +224,30 @@
   ```js
   "5" + 3;    // "53" (String concatenation: "5" is a string, 3 becomes part of the string)
   "5" - 3;    // 2 (Type coercion: "5" is converted to a number for subtraction)
+  ```
 
-2. Short-circuit Evaluation
+### **2. Short-circuit Evaluation**
+- **Explanation**:
+  JavaScript uses short-circuit evaluation with logical operators (`&&` and `||`):
+  
+  - `&&` (AND): If the first operand is **false**, it won't evaluate the second operand because the overall result will always be false.
+  - `||` (OR): If the first operand is **true**, it skips evaluating the second operand because the overall result will be true.
+  
+  **Example**:
+  ```js
+  true && console.log("This will print");  // This will print (both sides are evaluated)
+  false && console.log("This won't print");  // This won't print (skips the second evaluation)
 
-Explanation: JavaScript uses short-circuit evaluation with logical operators (&& and ||):
-
-&& (AND): If the first operand is false, it won't evaluate the second operand because the overall result will always be false.
-
-|| (OR): If the first operand is true, it skips evaluating the second operand because the overall result will be true.
-
-
-Example:
-
-true && console.log("This will print");  // This will print (both sides are evaluated)
-false && console.log("This won't print");  // This won't print (skips the second evaluation)
-
-true || console.log("This won't print");   // This won't print (first operand is true, so skips second)
-
-
+  true || console.log("This won't print");   // This won't print (first operand is true, so skips second)
+  ```
 
 ---
 
-Key Takeaway:
+**Key Takeaway**: 
+- Type coercion can cause unexpected results; use `===` for strict comparisons to avoid this.
+- Short-circuit evaluation helps improve performance by skipping unnecessary evaluations.
 
-Type coercion can cause unexpected results; use === for strict comparisons to avoid this.
 
-Short-circuit evaluation helps improve performance by skipping unnecessary evaluations.
 
 
 

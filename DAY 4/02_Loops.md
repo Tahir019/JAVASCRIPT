@@ -274,4 +274,56 @@ do {
 1. Write a JavaScript program that checks if a number is prime using a `for` loop.
 2. Create a multiplication table for a user-defined number using a `while` loop.
 3. Write a program that checks if a given year is a leap year using a `do...while` loop.
+
+
+## Homework Solutions
+
+### 1. Write a JavaScript program that checks if a number is prime using a `for` loop.
+
+```javascript
+function isPrime(num) {
+  if (num <= 1) return false;  // Numbers less than or equal to 1 are not prime.
+  
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;  // If the number is divisible by any number other than 1 and itself, it is not prime.
+    }
+  }
+  return true;
+}
+
+const number = 29;  // Example number
+console.log(`${number} is prime:`, isPrime(number));
 ```
+
+### 2. Create a multiplication table for a user-defined number using a `while` loop.
+
+```javascript
+function multiplicationTable(number) {
+  let i = 1;
+  while (i <= 10) {
+    console.log(`${number} x ${i} = ${number * i}`);
+    i++;
+  }
+}
+
+const userNumber = 5;  // Example user-defined number
+multiplicationTable(userNumber);
+```
+
+### 3. Write a program that checks if a given year is a leap year using a `do...while` loop.
+
+```javascript
+function isLeapYear(year) {
+  return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+}
+
+let year = 2024;  // Example year
+do {
+  console.log(`${year} is a leap year:`, isLeapYear(year));
+  year++;
+} while (year <= 2024);  // Only checks for one year, modify to check a range if needed
+```
+
+
+
